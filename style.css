@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(1,1fr) repeat(1,auto);
+    grid-template-areas: 
+    "header"
+    "content";
+}
+.header{
+    background-color: orange;
+    position:fixed;
+    width: 100%;
+}
+.add_btn{
+    float: right;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 2px 3px;
+    background-color: white;
+}
+.add_btn:hover{
+    background-color: lightgray;
+}
+.content{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: lightgray;
+    margin-top: 63px;
+}
+form{
+    margin: auto;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 3px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+form .get{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}
+form .get_{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form .cfrm_btn{
+    margin-top: 30px;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+form .cncl_btn{
+    margin-top: 30px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+.card{
+    background-color: yellow;
+    width:200px;
+    height:200px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: cener;
+}
+.notread{
+    background-color: pink;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 0px 20px;
+    color: red;
+}
+.read{
+    background-color: lightgreen;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 0px 20px;
+    color: green;
+}
+.card div{
+    text-align: center;
+    font-size: x-large;
+}
+#card{
+    grid-area: card;
+}
+.modal{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+}
